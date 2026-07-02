@@ -19,4 +19,10 @@ public class PermissionException extends RuntimeException {
         this.code = exception.getCode();
         this.errorMessage = exception.getMessage();
     }
+
+    public PermissionException(Integer code, String errorMessage) {
+        super(errorMessage);
+        this.code = code;
+        this.errorMessage = errorMessage;
+    }
 }
